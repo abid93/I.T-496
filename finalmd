@@ -1,0 +1,16 @@
+# I.T-496
+<?php
+require "finalconnect.php";
+
+
+function remove($chars) {
+    $my_array = array("ABCDEFGHIJKLM0123456789NOPQRSTUVWXYZ?!/\()_."
+chop($chars,"B,S,0,1"); // Removes special chars.
+}
+    
+                      
+function randomize($chars){
+	shuffle($chars);
+	return $chars;
+}
+?>
